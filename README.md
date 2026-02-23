@@ -10,8 +10,21 @@
 
 This project aims to provide a real-time chat experience that's both scalable and secure. With a focus on modern technologies, we're building an application that's easy to use and maintain.
 
+## 📺 Demo Video
 
-## Detailed Workflow Description:
+Below is a short demonstration showing the project running locally. You can host a copy of your `demo.mp4` file in the repository (e.g. in a `docs/` folder) or link to an online video such as YouTube.
+
+<p align="center">
+  <video width="600" controls>
+    <source src="docs/demo.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</p>
+
+(Replace `docs/demo.mp4` with the actual path or a URL to your hosted video.)
+
+
+## 🔍 Detailed Workflow Description:
 
 <div align="center">
   <img src="https://github.com/user-attachments/assets/f845a188-8e70-42f7-8577-30af38e83053" alt="workflow"/>
@@ -84,7 +97,7 @@ PORT=5001
 git clone https://github.com/iemafzalhassan/full-stack_chatApp.git
 ```
 
-## 🏗️ Build and Run the Application"
+## 🏗️ Build and Run the Application
 
 Follow these steps to build and run the application:
 
@@ -186,6 +199,9 @@ You can now interact with the real-time chat app and start messaging!
 
 ### 🤝 Contributing
 
+> _Feel free to update the demo video and README whenever the UI or workflow changes._
+
+
 
 We welcome contributions from DevOps & Developer of all skill levels! Here's how you can contribute:
 
@@ -222,7 +238,7 @@ This project is evolving, and here are a few exciting things on the horizon:
 
 ![logout](/frontend/public/logout.png)
 
-![Login](/frontend/public/login.png)
+![Login](/frontend/public/chatapplogin.png)
 
 
 
