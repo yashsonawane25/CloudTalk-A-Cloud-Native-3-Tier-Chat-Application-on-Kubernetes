@@ -1,19 +1,28 @@
-# Full Stack Chatapp
+# 🚀 CloudTalk – A Cloud-Native 3-Tier Chat Application on Kubernetes
 
-[![GitHub Profile](https://img.shields.io/badge/GitHub-iemafzalhassan-purple?logo=github&style=flat)](https://github.com/iemafzalhassan)
-![Docker Image](https://img.shields.io/github/forks/iemafzalhassan/full-stack_chatApp)
-[![Stars](https://img.shields.io/github/stars/iemafzalhassan/full-stack_chatApp)](https://github.com/iemafzalhassan/full-stack_chatApp)
-![GitHub last commit](https://img.shields.io/github/last-commit/iemafzalhassan/full-stack_chatApp?color=green)
+CloudTalk is a production-style, cloud-native real-time chat application built using a scalable 3-tier architecture. The application is fully containerized using Docker and orchestrated with Kubernetes (Minikube), demonstrating modern DevOps deployment practices.
 
+---
 
-## 📝 Introduction:
+## 🏗 Architecture Overview
 
-This project aims to provide a real-time chat experience that's both scalable and secure. With a focus on modern technologies, we're building an application that's easy to use and maintain.
+CloudTalk follows a structured 3-tier architecture:
 
-## 📺 Demo Video
+1️⃣ **Presentation Layer (Frontend)** – React.js + TailwindCSS
+2️⃣ **Application Layer (Backend)** – Node.js + Express.js + Socket.io
+3️⃣ **Data Layer (Database)** – MongoDB
 
+Each service runs inside Docker containers and is deployed via Kubernetes manifests for scalable orchestration.
 
+---
 
+## 🎥 Demo Video
+
+▶️ Watch the full demo here:
+
+[https://raw.githubusercontent.com/yashsonawane25/CloudTalk-A-Cloud-Native-3-Tier-Chat-Application-on-Kubernetes/main/Project%20Video.mp4](https://raw.githubusercontent.com/yashsonawane25/CloudTalk-A-Cloud-Native-3-Tier-Chat-Application-on-Kubernetes/main/Project%20Video.mp4)
+
+---
 
 ## 🔍 Detailed Workflow Description:
 
@@ -22,220 +31,135 @@ This project aims to provide a real-time chat experience that's both scalable an
 </div>
 
 
-- **User Interaction:**
-   - Users interact with the frontend application running in their browser. This includes actions like logging in, sending messages, and navigating through the chat interface.Frontend (React App):The frontend is responsible for rendering the user interface and handling user inputs.It communicates with the backend via HTTP requests (for RESTful APIs) and WebSocket connections (for real-time interactions).
+## 🔥 Key Features
 
-- **Backend (Node.js/Express + Socket.io):**
-   - The backend handles all the server-side logic.It processes API requests from the frontend to perform actions such as user authentication, message retrieval, and message storage.Socket.io is used to manage real-time bi-directional communication between the frontend and the backend. This allows for instant messaging features, such as showing when users are typing or when new messages are sent.
+* ⚡ Real-time messaging using Socket.io
+* 🔐 Secure authentication & authorization using JWT
+* 🐳 Docker containerization for all services
+* ☸️ Kubernetes deployment (Minikube)
+* 🌐 Nginx reverse proxy configuration
+* 📦 Scalable 3-tier production-style architecture
+* 👤 Profile management & online status tracking
 
+---
 
-- **MongoDB (Database):**
-   - MongoDB stores all persistent data for the application, including user profiles, chat messages, and any other relevant data.The backend interacts with MongoDB to retrieve, add, update, or delete data based on the requests it receives from the frontend.
+## 🛠 Tech Stack
 
+**Frontend:** React, TailwindCSS, DaisyUI, Zustand
+**Backend:** Node.js, Express.js, Socket.io
+**Database:** MongoDB
+**Containerization:** Docker
+**Orchestration:** Kubernetes (Minikube)
+**Web Server:** Nginx
+**Authentication:** JWT
 
+---
 
+## ⚙️ Prerequisites
 
-## ✨ Features:
+* Node.js (v14 or higher)
+* Docker
+* Kubernetes (Minikube)
+* Git
 
+---
 
-* **Real-time Messaging**: Send and receive messages instantly using Socket.io 
-* **User Authentication & Authorization**: Securely manage user access with JWT 
-* **Scalable & Secure Architecture**: Built to handle large volumes of traffic and data 
-* **Modern UI Design**: A user-friendly interface crafted with React and TailwindCSS 
-* **Profile Management**: Users can upload and update their profile pictures 
-* **Online Status**: View real-time online/offline status of users 
+## 🔧 Environment Configuration
 
+Navigate to the backend directory:
 
-## 🛠️ Tech Stack:
-
-
-* **Backend:** Node.js, Express, MongoDB, Socket.io
-* **Frontend:** React, TailwindCSS
-* **Containerization:** Docker
-* **Orchestration:** Kubernetes (planned)
-* **Web Server:** Nginx
-* **State Management:** Zustand
-* **Authentication:** JWT
-* **Styling Components:** DaisyUI
-
-
-## 🔧 Prerequisites:
-
-
-* **[Node.js](https://nodejs.org/)** (v14 or higher)
-* **[Docker](https://www.docker.com/get-started)** (for containerizing the app)
-* **[Git](https://git-scm.com/downloads)** (to clone the repository)
-
-
-## 📝 Setup .env File:
-
-
-1. Navigate to the `backend` directory:
-```bash
+```
 cd backend
 ```
-2. Create a `.env` file and add the following content (modify the values as needed):
-```env
+
+Create a `.env` file:
+
+```
 MONGODB_URI=mongodb://mongoadmin:secret@mongodb:27017/dbname?authSource=admin
-JWT_SECRET=your_jwt_secret_key
+JWT_SECRET=your_secure_jwt_secret
 PORT=5001
 ```
-> **Note:** Replace `your_jwt_secret_key` with a strong secret key of your choice.
 
-### Clone the Repository
+---
 
-```bash
-git clone https://github.com/iemafzalhassan/full-stack_chatApp.git
+## 🐳 Running with Docker Compose
+
 ```
+git clone https://github.com/yashsonawane25/CloudTalk-A-Cloud-Native-3-Tier-Chat-Application-on-Kubernetes.git
+cd CloudTalk-A-Cloud-Native-3-Tier-Chat-Application-on-Kubernetes
 
-## 🏗️ Build and Run the Application
-
-Follow these steps to build and run the application:
-
-1. Build & Run the Containers:
-
-```bash
-cd full-stack_chatApp
-```
-```bash
 docker-compose up -d --build
 ```
 
-2. Access the application in your browser:
+Access the application at:
 
 ```
 http://localhost
 ```
----
-
-## 🛠️ Getting Started
-
-Follow these simple steps to get the project up and running on your local Host using docker.
-
-```bash
-git clone https://github.com/iemafzalhassan/full-stack_chatApp.git
-```
-
-```bash
-cd full-stack_chatApp
-```
-## Create a Docker network:
-
-```bash
-docker network create full-stack
-```
-
-## 🛠️ Building the Frontend
-
-```bash
-cd frontend
-```
-
-```bash
-docker build -t full-stack_frontend .
-```
-
-### Run the Frontend container:
-
-```bash
-docker run -d --network=full-stack  -p 5173:5173 --name frontend full-stack_frontend:latest
-```
-#### The frontend will now be accessible on port 5173.
-
-
-### Run the MongoDB Container:
-
-```bash
-docker run -d -p 27017:27017 --name mongo mongo:latest
-```
----
-
-## 🛠️ Building the Backend
-
-```bash
-cd backend
-```
-
-### Build the Backend image:
-
-```bash
-docker build -t full-stack_backend .
-```
-
-### Run the Backend container:
-
-```bash
-docker run -d --network=full-stack --add-host=host.docker.internal:host-gateway -p 5001:5001 --env-file .env full-stack_backend
-
-```
-#### This will build and run the backend container, exposing the backendAPI on port 5001.
-
-`Backend API: http://localhost:5001`
-
-### To Verify the conncetion between backend and databse:
-```bash
-docker-compose logs -f
-```
-
-### Once the backend and frontend containers are running, you can access the application in your browser:
-
-`Frontend: http://localhost`
-
-
-You can now interact with the real-time chat app and start messaging!
 
 ---
 
+## ☸️ Running on Kubernetes (Minikube)
 
+Start Minikube:
 
-### 🤝 Contributing
+```
+minikube start
+```
 
-> _Feel free to update the demo video and README whenever the UI or workflow changes._
+Apply Kubernetes manifests:
 
+```
+kubectl apply -f k8s/
+```
 
+Check running resources:
 
-We welcome contributions from DevOps & Developer of all skill levels! Here's how you can contribute:
-
-**Report bugs:** If you encounter any bugs or issues, please open an issue with detailed information.
-**Suggest features:** Have an idea for a new feature? Open an issue to discuss it with the community.
-**Submit pull requests:** If you have a fix or a feature you'd like to contribute, submit a pull request. Ensure your changes pass any linting or tests, if applicable.
-
-### 🌐 Join the Community
-
-We invite you to join our community of developers and contributors. Let's work together to build an amazing real-time chat application!
-
-* **Star this repository** to show your support
-* **Fork this repository** to contribute to the project
-* **Open an issue** to report bugs or suggest features
-* **Submit a pull request** to contribute code changes
-
-## 🔮 Future Plans
-
-https://github.com/yashsonawane25/CloudTalk-A-Cloud-Native-3-Tier-Chat-Application-on-Kubernetes/blob/main/Project%20Video.mp4
-This project is evolving, and here are a few exciting things on the horizon:
-
-* [x] **CI/CD Pipelines:** Implement Continuous Integration and Continuous Deployment pipelines to automate testing and deployment.
-* [x] **Kubernetes (K8s):** Add Kubernetes manifests for container orchestration to deploy the app on cloud platforms like AWS, GCP, or Azure.
-* [x] **Feature Expansion:** Add more features like group chats, media sharing, and user status updates.
-* **Stay tuned for updates as we continue to improve and expand this project!**
+```
+kubectl get pods
+kubectl get services
+```
 
 ---
 
-## 📚 Project Snapshots:
+## 📊 DevOps Highlights
+
+* Multi-container Docker setup
+* Internal container networking
+* Kubernetes Deployments & Services
+* Scalable microservice-style architecture
+* Production-ready configuration structure
+
+---
+
+## 📸 Project Snapshots
 
 ![Settings](frontend/public/settings.png)
+![Chat](frontend/public/chat.png)
+![Logout](frontend/public/logout.png)
+![Login](frontend/public/chatapplogin.png)
 
-![chat](frontend/public/chat.png)
+---
 
-![logout](/frontend/public/logout.png)
+## 🚀 Future Enhancements
 
-![Login](/frontend/public/chatapplogin.png)
+* CI/CD Pipeline Integration (Jenkins / GitHub Actions)
+* Helm chart packaging
+* Cloud deployment (AWS EKS / GKE / AKS)
+* Monitoring with Prometheus & Grafana
+* Horizontal Pod Autoscaling
 
-
+---
 
 ## 📜 License
 
+This project is licensed under the MIT License.
 
+---
 
-This project is licensed under the MIT License. See the LICENSE file for more details.
+## 👨‍💻 Author
 
+**Yash Sonawane**
+DevOps & Cloud Enthusiast
+
+If you found this project helpful, consider giving it a ⭐
