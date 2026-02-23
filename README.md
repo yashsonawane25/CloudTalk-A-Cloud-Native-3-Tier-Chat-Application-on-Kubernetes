@@ -12,16 +12,7 @@ This project aims to provide a real-time chat experience that's both scalable an
 
 ## 📺 Demo Video
 
-Below is a short demonstration showing the project running locally. You can host a copy of your `demo.mp4` file in the repository (e.g. in a `docs/` folder) or link to an online video such as YouTube.
 
-<p align="center">
-  <video width="600" controls>
-    <source src="https://raw.githubusercontent.com/yashsonawane25/CloudTalk-A-Cloud-Native-3-Tier-Chat-Application-on-Kubernetes/main/Project%20Video.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-</p>
-
-(Replace `docs/demo.mp4` with the actual path or a URL to your hosted video.)
 
 
 ## 🔍 Detailed Workflow Description:
@@ -247,3 +238,4 @@ This project is evolving, and here are a few exciting things on the horizon:
 
 
 This project is licensed under the MIT License. See the LICENSE file for more details.
+
