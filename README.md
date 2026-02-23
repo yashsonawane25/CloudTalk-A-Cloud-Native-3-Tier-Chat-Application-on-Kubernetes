@@ -16,7 +16,7 @@ Below is a short demonstration showing the project running locally. You can host
 
 <p align="center">
   <video width="600" controls>
-    <source src="docs/demo.mp4" type="video/mp4">
+    <source src="https://raw.githubusercontent.com/yashsonawane25/CloudTalk-A-Cloud-Native-3-Tier-Chat-Application-on-Kubernetes/main/Project%20Video.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
 </p>
@@ -220,7 +220,7 @@ We invite you to join our community of developers and contributors. Let's work t
 
 ## 🔮 Future Plans
 
-
+https://github.com/yashsonawane25/CloudTalk-A-Cloud-Native-3-Tier-Chat-Application-on-Kubernetes/blob/main/Project%20Video.mp4
 This project is evolving, and here are a few exciting things on the horizon:
 
 * [x] **CI/CD Pipelines:** Implement Continuous Integration and Continuous Deployment pipelines to automate testing and deployment.
@@ -243,6 +243,7 @@ This project is evolving, and here are a few exciting things on the horizon:
 
 
 ## 📜 License
+
 
 
 This project is licensed under the MIT License. See the LICENSE file for more details.
